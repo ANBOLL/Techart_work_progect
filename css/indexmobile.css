@@ -1,0 +1,132 @@
+@media (max-width: 800px) {
+  html {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    background-color: rgb(182, 183, 183);
+  }
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+
+  body {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  /*-------------start main---------------*/
+  .news_blocks_margin{
+
+    margin: 0;
+  }
+  .hero_text {
+    margin-left: 0px;
+    max-width: 780px;
+    width: 100%;
+    gap: 0px;
+  }
+
+  .hero_h1 {
+    padding-left: 5px;
+    max-width: 800px;
+    width: 100%;
+    height: max-content;
+    font-size: 40px;
+  }
+
+  .hero_text p {
+    padding-left: 5px;
+    margin-top: 10px;
+    max-width: 800px;
+    width: 100%;
+    height: max-content;
+    font-size: 25px;
+  }
+
+  .news_title {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .news_block {
+    margin: 40px 0px 0px 0px;
+  }
+
+  .news {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .news,
+  .news:nth-child(2),
+  .news:nth-child(3),
+  .news:last-child {
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  .news:hover .title_news {
+    color: var(--brand-color, #841844);
+  }
+
+  .title_news,
+  .announce_news{
+    max-width: 780px;
+    width: 100%;
+    height: max-content;
+  }
+
+  .pagination {
+    margin: 83px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pagination_item {
+    display: flex;
+    gap: 16px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .pagination_list {
+    width: 40px;
+    height: 40px;
+  }
+
+  .pagination_list_1 {
+    width: 55px;
+    height: 40px;
+    padding: 0px;
+  }
+
+  .arrow_last_page {
+    background-image: url(../img/Arrow\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 26px;
+    height: 22px;
+    margin: 0 auto;
+  }
+
+  .arrow_first_page {
+    background-image: url(../img/Arrow\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: rotate(180deg);
+    width: 26px;
+    height: 22px;
+    margin: 0px;
+  }
+
+  .hero_p {
+    width: 100%;
+  }
+
+  /*-------------end main---------------*/
+}

@@ -1,0 +1,19 @@
+@media (max-width: 800px) {
+  /*-------------start footer---------------*/
+  footer {
+    max-width: 800px;
+  }
+  .hr_footer {
+    display: flex;
+    margin: 0px 0px 0px 0px;
+    justify-content: center;
+  }
+  .footer_text {
+    display: flex;
+    margin: 63.59px 0px 84.41px 0px;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+  }
+  /*-------------end footer---------------*/
+}

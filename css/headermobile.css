@@ -1,0 +1,51 @@
+@media (max-width: 800px) {
+  /*-------------start header---------------*/
+  header {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+  .logotype {
+    display: flex;
+    width: auto;
+    margin: 20px 0px 0px 0px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .navigation {
+    margin: 10px 0px 0px 0px;
+    justify-content: center;
+  }
+  .text_logo {
+    font-size: 20px;
+  }
+  .logo_image {
+    width: 60px;
+  }
+  .header_list,
+  .header_list:hover .header_a,
+  .header_list .header_a,
+  .header_list:hover,
+  .header_list.active,
+  .header_list.active .header_a {
+    width: max-content;
+    height: 40px;
+  }
+  .header_list h4 {
+    display: flex;
+    margin: 0px;
+    width: max-content;
+    height: 40px;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .header_item {
+    gap: 5px;
+  }
+  .header_list {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  /*-------------end header---------------*/
+}
