@@ -1,6 +1,8 @@
 <?php
 namespace App\Controllers;
 use App\Models\NewsModel;
+use App\Models\PaginationModel;
+use views\PaginationView;
 class NewsController
 {
     public $LIMIT = 4;
@@ -12,17 +14,13 @@ class NewsController
         $query = NewsModel::getList($number, $this->LIMIT);
         $resi = NewsModel::getList($number, 1);
         $numPage = ceil($total / $this->LIMIT);
-        $link = "/news/page-";
-        $showCount = 2;
-        $begin = $page - intval($showCount / 2);
+        $url = '/news/page-%d/';
         $array = [
-            'numPage' => $numPage,
+            'numPages' => $numPage,
             'query' => $query,
             'resi' => $resi,
-            'page' => $page,
-            'link' => $link,
-            'begin' => $begin,
-            'showCount' => $showCount,
+            'currentPage' => $page,
+            'url' => $url,
         ];
         $this->render('/news/list', $array);
     }

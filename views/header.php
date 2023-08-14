@@ -26,10 +26,10 @@
             include_once("menu.php");
             foreach ($arr as $key => $value) {
                 $pageName = $value["title"];
-                $url = $value["url"];
+                $urlHeader = $value["url"];
                 if ($key == $code) { ?> 
                     <li class="header_list active">
-                        <a href="<?= $url ?>" class="header_a">
+                        <a href="<?= $urlHeader ?>" class="header_a">
                             <h4><?= $pageName ?></h4>
                         </a>
                     </li>
@@ -40,7 +40,7 @@
                     if($pageName != "Новости") { 
                     ?>
                     <li class="header_list">
-                        <a href="<?= $url ?>" class="header_a">
+                        <a href="<?= $urlHeader ?>" class="header_a">
                             <h4>
                                 <?php if($pageName != "Новости") {echo $pageName; } ?>
                             </h4>

@@ -2,9 +2,9 @@
 session_start();
 $code = "Index";
 include_once("views/header.php");
-$pagesession = $page;
+$pagesession = $currentPage;
 $_SESSION['pagesession'] = $pagesession;
-$_GET['pagenow'] = $page;
+$_GET['pagenow'] = $currentPage;
 ?>
 <main class="main_index">
     <section class="hero_section">
@@ -39,11 +39,7 @@ $_GET['pagenow'] = $page;
     </section>
     <section class="pagination">
         <ul class="pagination_item">
-            <?php 
-            include('App/Controllers/Pagination.php');
-            $link = "/news/page-";
-            Pagination::Navigation($page, $numPage, 2, $link);
-            ?>       
+            <?php include('views/pager.php'); ?>
         </ul>
     </section>
 </main>
